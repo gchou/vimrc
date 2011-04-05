@@ -22,19 +22,24 @@ like it.  To do so, please do the following:
 
    	source ~/path/to/vimrc/vimrc
 
-3. Fetch submodules::
+3. Create a symbolic link from ~/.vim to vimrc/vim::
+
+   	cd ~
+   	ln -s ~/path/to/vimrc/vim .vim
+
+4. Fetch submodules::
 
    	git submodule init
    	git submodule update
 
-4. Recompile Command-T Ruby C extension for your platform (if other than
+5. Recompile Command-T Ruby C extension for your platform (if other than
    Mac OS X)::
 
    	cd vim/ruby/command-t
    	ruby extconf.rb
    	make clean; make
 
-5. Touch::
+6. Touch::
 
    	touch ~/.vim/user.vim
 

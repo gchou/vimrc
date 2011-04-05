@@ -201,10 +201,10 @@ nnoremap ' `
 nnoremap ` '
 
 " Use the damn hjkl keys
-" map <up> <nop>
-" map <down> <nop>
-" map <left> <nop>
-" map <right> <nop>
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
 
 " Remap j and k to act as expected when used on long, wrapped, lines
 nnoremap j gj
@@ -288,6 +288,10 @@ nnoremap <leader>v V`]
 
 " Gundo.vim
 nnoremap <F5> :GundoToggle<CR>
+
+" Set working directory
+nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
 " }}}
 
 " NERDTree settings {{{
