@@ -5,11 +5,7 @@ like it.  To do so, please do the following:
 
 1. Clone this repo::
 
-   	git clone git://github.com/nvie/vimrc.git
-
-   or download the plain source only::
-
-   	wget -qO - http://github.com/nvie/vimrc/tarball/master | tar -xzvf -
+   	git clone git://github.com/gchou/vimrc.git
 
 2. In your ~/.vimrc, add the following line::
 
@@ -25,7 +21,7 @@ like it.  To do so, please do the following:
    	git submodule init
    	git submodule update
 
-5. Recompile Command-T Ruby C extension for your platform (if other than
+5. Recompile Command-T Ruby C extension for your platform::
    Mac OS X)::
 
    	cd vim/ruby/command-t
