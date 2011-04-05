@@ -164,7 +164,7 @@ endfunction
 
 " Highlighting {{{
 if &t_Co >= 256 || has("gui_running")
-   colorscheme molokai
+   colorscheme mustang
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -258,7 +258,7 @@ nmap <leader>ac :center<CR>
 
 " Pull word under cursor into LHS of a substitute (for quick search and
 " replace)
-nmap <leader>z :%s#\<<C-r>=expand("<cword>")<CR>\>#
+nmap <leader>z :%s/\<<C-r>=expand("<cword>")<CR>\>/
 
 " Scratch
 nmap <leader><tab> :Sscratch<CR><C-W>x<C-J>
@@ -558,10 +558,10 @@ iab llorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam lacus
 iab lllorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam lacus ligula, accumsan id imperdiet rhoncus, dapibus vitae arcu.  Nulla non quam erat, luctus consequat nisi.  Integer hendrerit lacus sagittis erat fermentum tincidunt.  Cras vel dui neque.  In sagittis commodo luctus.  Mauris non metus dolor, ut suscipit dui.  Aliquam mauris lacus, laoreet et consequat quis, bibendum id ipsum.  Donec gravida, diam id imperdiet cursus, nunc nisl bibendum sapien, eget tempor neque elit in tortor
 
 if has("gui_running")
-    set guifont=Inconsolata:h14
+    "set guifont=Inconsolata:h14
     "colorscheme baycomb
-    "colorscheme mustang
-    colorscheme molokai
+    colorscheme mustang
+    "colorscheme molokai
 
     " Remove toolbar, left scrollbar and right scrollbar
     set guioptions-=T
