@@ -292,6 +292,10 @@ nnoremap <F5> :GundoToggle<CR>
 " Set working directory
 nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+" Session shortcuts.
+map <leader>ss :mksession! ~/.vim_session <CR> " Quick write session
+map <leader>sl :source ~/.vim_session <CR>     " Load session
+
 " }}}
 
 " NERDTree settings {{{
