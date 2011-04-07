@@ -22,11 +22,9 @@ like it.  To do so, please do the following:
    	git submodule update
 
 5. Recompile Command-T Ruby C extension for your platform::
-   Mac OS X)::
 
-   	cd vim/ruby/command-t
-   	ruby extconf.rb
-   	make clean; make
+   	cd vim/bundle/commandt
+   	rake make
 
 6. Touch::
 
