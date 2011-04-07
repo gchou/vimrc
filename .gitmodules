@@ -46,3 +46,6 @@
 [submodule "vim/bundle/commandt"]
 	path = vim/bundle/commandt
 	url = git://github.com/wincent/Command-T.git
+[submodule "vim/bundle/vim-git"]
+	path = vim/bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
