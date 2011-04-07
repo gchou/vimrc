@@ -417,11 +417,6 @@ if has("autocmd")
         endfun
 
         autocmd BufNewFile,BufRead *.html,*.htm call s:DetectHTMLVariant()
-
-        " Auto-closing of HTML/XML tags
-        let g:closetag_default_xml=1
-        autocmd filetype html,htmldjango let b:closetag_html_style=1
-        autocmd filetype html,xhtml,xml source ~/.vim/scripts/closetag.vim
     augroup end " }}}
 
     augroup python_files "{{{
@@ -463,9 +458,6 @@ if has("autocmd")
         autocmd filetype python imap <buffer> <F5> <Esc>:w<CR>:!python %<CR>
         autocmd filetype python map <buffer> <S-F5> :w<CR>:!ipython %<CR>
         autocmd filetype python imap <buffer> <S-F5> <Esc>:w<CR>:!ipython %<CR>
-
-        " Run a quick static syntax check every time we save a Python file
-        autocmd BufWritePost *.py call Pyflakes()
     augroup end " }}}
 
     augroup ruby_files "{{{
