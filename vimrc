@@ -296,6 +296,10 @@ nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
 map <leader>ss :mksession! ~/.vim_session <CR> " Quick write session
 map <leader>sl :source ~/.vim_session <CR>     " Load session
 
+" Insert newline without entering insert mode.
+nmap <CR> o<Esc>k
+nmap <S-Enter> O<Esc>j
+
 " }}}
 
 " NERDTree settings {{{
