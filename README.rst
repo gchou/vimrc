@@ -35,5 +35,5 @@ That's it.
 
 Updating submodules.
 ==============================
-Run the following command to get the latest update for submodules.
+Run the following command to get the latest update for submodules.::
    	git submodule foreach git pull
