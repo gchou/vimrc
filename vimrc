@@ -296,10 +296,12 @@ nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
 map <leader>ss :mksession! ~/.vim_session <CR> " Quick write session
 map <leader>sl :source ~/.vim_session <CR>     " Load session
 
-" Insert newline without entering insert mode.
-nmap <CR> o<Esc>k
-nmap <S-Enter> O<Esc>j
+" Next line in insert mode.
+inoremap <M-o> <Esc>o
+inoremap <C-j> <Down>
 
+" Enable ragtag mappings.
+let g:ragtag_global_maps = 1
 " }}}
 
 " NERDTree settings {{{
