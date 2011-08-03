@@ -31,9 +31,3 @@ like it.  To do so, please do the following:
    	touch ~/.vim/user.vim
 
 That's it.
-
-
-Updating submodules.
-==============================
-Run the following command to get the latest update for submodules.::
-   	git submodule foreach git pull
