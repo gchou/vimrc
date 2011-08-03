@@ -35,10 +35,10 @@ let mapleader=","
 " Editing behaviour {{{
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
-set tabstop=4                   " a tab is four spaces
-set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
+set tabstop=8                   " a tab is eight spaces so tabs aren't used
+set softtabstop=2               " when hitting <BS>, pretend like a tab is removed, even if spaces
 set expandtab                   " expand tabs by default (overloadable per file type later)
-set shiftwidth=4                " number of spaces to use for autoindenting
+set shiftwidth=2                " number of spaces to use for autoindenting
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 set autoindent                  " always set autoindenting on
@@ -446,7 +446,7 @@ if has("autocmd")
 
         " PEP8 compliance (set 1 tab = 4 chars explicitly, even if set
         " earlier, as it is important)
-        autocmd filetype python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+        autocmd filetype python setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
         autocmd filetype python setlocal textwidth=80
         autocmd filetype python match ErrorMsg '\%>80v.\+'
 
